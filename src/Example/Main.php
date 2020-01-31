@@ -52,7 +52,7 @@ class Main extends PluginBase implements Listener{
 			}
 			switch($result){
 				case 0:
-					$sender->sendMessage($this->prefix . $this->getConfig()->get("example.msg1"));
+					$this->getServer()->getCommandMap()->dispatch($player, "warp kitpvp");
 					break;
 				case 1:
 					$sender->sendMessage($this->prefix . $this->getConfig()->get("example.msg2"));
